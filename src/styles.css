@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+.child {
+    height: 200px;
+    background-color: slategray;
+    padding: 10px;
+    color: white;
+    margin: 10px;
+}
+
+.child legend {
+    font-size: 1.2em;
+    font-weight: 700;
+}

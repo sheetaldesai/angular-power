@@ -1,0 +1,38 @@
+<div class="container">
+  <form action="">
+  <fieldset>
+    <legend>Power Compoenent</legend>
+    <div class="form-group">
+      <label for="">Initial Power</label>
+      <select name="power" id="" [(ngModel)] = 'power'>
+        <option *ngFor = "let num of numbers" value="{{num}}">{{num}}</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <button (click)="onCalculatePower()">Calculate Power</button>
+    </div>
+  </fieldset>
+  </form>
+  <div class="row">
+    <div class="col-sm-4">
+      <app-child [childPower]="powerHuman" legend="Human"></app-child>
+    </div>
+    <div class="col-sm-4">
+      <app-child [childPower]="powerSaiyan" legend="Saiyan"></app-child>
+    </div>
+    <div class="col-sm-4">
+      <app-child [childPower]="powerSupersaiyan" legend="Super Saiyan"></app-child>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <app-child [childPower]="powerSupersaiyan2" legend="Super Saiyan 2"></app-child>
+    </div>
+    <div class="col-sm-4">
+      <app-child [childPower]="powerSupersaiyan3" legend="Super Saiyan 3"></app-child>
+    </div>
+    <div class="col-sm-4">
+      <app-child [childPower]="powerSupersaiyan4" legend="Super Saiyan 4"></app-child>
+    </div>
+  </div>
+</div>
